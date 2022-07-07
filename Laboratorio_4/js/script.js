@@ -17,7 +17,8 @@ function TodoPost(event) {
     let list = document.getElementById("todoList")
 
     let currentList = list.innerHTML
-    list.innerHTML = currentList + `<input type = "checkbox" name="todo"/> ${todo}`
+    list.innerHTML = currentList + `<input type = "checkbox" name="todo"/> ${todo} <br>`
+    document.getElementById("todoText").value=""
 }
  
 function TodoClear() {
